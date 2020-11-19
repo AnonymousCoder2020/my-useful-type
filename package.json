@@ -1,30 +1,25 @@
 {
-  "name": "my-ts-utilities-boilerplate",
+  "name": "my-useful-type",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setup": "node scripts setup",
+    "setup": "npm i && node scripts setup",
     "build": "tsc && git add .",
     "set-url": "git remote set-url origin",
     "check-url": "git remote -v",
     "merge": "git merge origin master --allow-unrelated-histories",
     "push": "git push origin master",
-    "pull": "git pull origin master"
+    "pull": "git pull origin main"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AnonymousCoder2020/my-ts-utilities-boilerplate.git"
-  },
+  "repository": "git+https://github.com/AnonymousCoder2020/my-useful-type.git",
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AnonymousCoder2020/my-ts-utilities-boilerplate/issues"
-  },
-  "homepage": "https://github.com/AnonymousCoder2020/my-ts-utilities-boilerplate#readme",
+  "bugs": "https://github.com/AnonymousCoder2020/my-useful-type/issues",
+  "homepage": "https://github.com/AnonymousCoder2020/my-useful-type#readme",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.11.5",
