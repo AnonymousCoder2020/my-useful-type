@@ -11,7 +11,7 @@
     "set-url": "git remote set-url origin",
     "check-url": "git remote -v",
     "merge": "git merge origin master --allow-unrelated-histories",
-    "push": "git push origin master",
+    "push": "git push origin main",
     "pull": "git pull origin main"
   },
   "repository": "git+https://github.com/AnonymousCoder2020/my-useful-type.git",
