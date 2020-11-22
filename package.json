@@ -20,19 +20,20 @@
   "license": "MIT",
   "bugs": "https://github.com/AnonymousCoder2020/my-useful-type/issues",
   "homepage": "https://github.com/AnonymousCoder2020/my-useful-type#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@types/chrome": "0.0.126",
+    "@types/styled-components": "^5.1.4"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.5",
     "@babel/plugin-transform-modules-commonjs": "^7.10.4",
     "@types/babel__core": "^7.1.8",
-    "@types/chrome": "0.0.126",
     "@types/html-webpack-plugin": "^3.2.3",
     "@types/jest": "^24.9.1",
     "@types/lodash-es": "^4.17.3",
     "@types/lodash.isplainobject": "^4.0.6",
     "@types/react": "^17.0.0",
     "@types/store": "^2.0.2",
-    "@types/styled-components": "^5.1.4",
     "@types/webpack": "^4.41.17",
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-imports": "^2.0.0",
