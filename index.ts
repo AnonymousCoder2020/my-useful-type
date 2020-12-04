@@ -40,3 +40,17 @@ export type AlsoPromise<T> = T | Promise<T>
 export interface PlainAnyObject {
   [key: string]: any
 }
+
+export type SplitString<T extends string, S extends string> = T extends `${infer A}${S}${infer B}` ? [A, ...SplitComma<B>] : [T]
+
+export type SplitComma<T extends string> = SplitString<T, '.'>
+
+export type AccessByPath<T extends PlainAnyObject, P extends string[]> = P extends [infer A, ...infer B]
+  ? A extends keyof T
+    ? B extends string[]
+      ? AccessByPath<T[A], B>
+      : T[A]
+    : never
+  : T
+
+export type AccessByCommaPath<T extends PlainAnyObject, P extends string> = AccessByPath<T, SplitComma<P>>
