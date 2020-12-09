@@ -41,7 +41,7 @@ export interface PlainAnyObject {
   [key: string]: any
 }
 
-export type SplitString<T extends string, S extends string> = T extends `${infer A}${S}${infer B}` ? [A, ...SplitComma<B>] : [T]
+export type SplitString<T extends string, S extends string> = T extends `${infer A}${S}${infer B}` ? [A, ...SplitString<B, S>] : [T]
 
 export type SplitComma<T extends string> = SplitString<T, '.'>
 
