@@ -37,12 +37,12 @@ export type SortableCustomEvent<T extends Partial<SortableCustomEventType>> = T 
 
 export type AlsoPromise<T> = T | Promise<T>
 
-export interface PlainAnyObject {
-  [key: string]: any
+export interface PlainObject<T> {
+  [key: string]: T
 }
+export type PlainAnyObject = PlainObject<any>
 
 export type SplitString<T extends string, S extends string> = T extends `${infer A}${S}${infer B}` ? [A, ...SplitString<B, S>] : [T]
-
 export type SplitComma<T extends string> = SplitString<T, '.'>
 
 export type AccessByPath<T extends PlainAnyObject, P extends string[]> = P extends [infer A, ...infer B]
@@ -52,5 +52,9 @@ export type AccessByPath<T extends PlainAnyObject, P extends string[]> = P exten
       : T[A]
     : never
   : T
-
 export type AccessByCommaPath<T extends PlainAnyObject, P extends string> = AccessByPath<T, SplitComma<P>>
+
+export type Cast<X, Y> = X extends Y ? X : Y
+export type ArrayElement<A> = A extends readonly (infer T)[] ? T : never
+
+export type BundleProps<K extends string, V> = { [P in K]: V }
