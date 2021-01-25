@@ -58,3 +58,6 @@ export type Cast<X, Y> = X extends Y ? X : Y
 export type ArrayElement<A> = A extends readonly (infer T)[] ? T : never
 
 export type BundleProps<K extends string, V> = { [P in K]: V }
+
+export type AnyFunction = (...args: any[]) => any
+export type IsAsyncFunction<F extends AnyFunction> = F extends (...args: unknown[]) => Promise<unknown> ? true : false
