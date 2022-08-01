@@ -22,7 +22,9 @@
   "homepage": "https://github.com/AnonymousCoder2020/my-useful-type#readme",
   "dependencies": {
     "@types/chrome": "0.0.127",
-    "@types/styled-components": "^5.1.7"
+    "@types/styled-components": "^5.1.7",
+    "react": "^18.2.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@types/jest": "^26.0.19",
