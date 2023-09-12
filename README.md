@@ -1,5 +1,5 @@
 # my-useful-type
 
 ```
-npm i -D https://github.com/AnonymousCoder2020/my-useful-type
+yarn add -D github:AnonymousCoder2020/my-useful-type
 ```
