@@ -15,7 +15,7 @@ import type { Bookmarks } from 'webextension-polyfill'
 
 // util
 export type OrPromise<T> = T | Promise<T>
-export type OrArray<T> = T | T[]
+export type OrArr<T> = T | T[]
 export type SplitStr<T extends string, S extends string> = T extends `${infer A}${S}${infer B}` ? [A, ...SplitStr<B, S>] : [T]
 export type SplitPeriod<T extends string> = SplitStr<T, '.'>
 export type AccessByPath<T extends PlainAnyObj, P extends string[]> = P extends [infer A, ...infer B]
