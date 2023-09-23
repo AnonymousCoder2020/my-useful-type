@@ -1,6 +1,6 @@
 {
   "name": "my-useful-type",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "type": "module",
   "scripts": {
@@ -32,6 +32,7 @@
     "@types/lodash.isplainobject": "^4.0.6",
     "@types/react": "^17.0.0",
     "@types/store": "^2.0.2",
+    "@types/webextension-polyfill": "^0.10.3",
     "jest": "^26.6.3",
     "jest-svg-transformer": "^1.0.0",
     "ts-essentials": "^7.0.1",
