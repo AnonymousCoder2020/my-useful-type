@@ -746,10 +746,10 @@
     "@types/react" "*"
     csstype "^3.0.2"
 
-"@types/webextension-polyfill@^0.10.3":
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/@types/webextension-polyfill/-/webextension-polyfill-0.10.3.tgz#fbb06b3c684d6f37db6800b9832bf4104c8ef58f"
-  integrity sha512-7RqGPhr+Ib7IKrOIeXRTB2TVojq/bMRieoYVfgHoicQ+VvI6OOzBNF0fZXA+5JVJIEtfE/o426S+bMgg/XhvXg==
+"@types/webextension-polyfill@^0.10.7":
+  version "0.10.7"
+  resolved "https://registry.yarnpkg.com/@types/webextension-polyfill/-/webextension-polyfill-0.10.7.tgz#de059250599733a60ed26c8a0c81e21e11183b90"
+  integrity sha512-10ql7A0qzBmFB+F+qAke/nP1PIonS0TXZAOMVOxEUsm+lGSW6uwVcISFNa0I4Oyj0884TZVWGGMIWeXOVSNFHw==
 
 "@types/yargs-parser@*":
   version "21.0.0"
